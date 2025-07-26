@@ -4,6 +4,7 @@ var tslib_1 = require("tslib");
 var react_1 = tslib_1.__importDefault(require("react"));
 var react_tooltip_1 = require("react-tooltip");
 var provinces_1 = require("../../data/provinces");
+require("./iran-map.css");
 var IranMapWrapper = function (_a) {
     var _b;
     var textColor = _a.textColor, mapRef = _a.mapRef, provinceName = _a.provinceName, pathClickedHandle = _a.pathClickedHandle, pathMouseOverHandler = _a.pathMouseOverHandler, data = _a.data, width = _a.width, tooltipTitle = _a.tooltipTitle;

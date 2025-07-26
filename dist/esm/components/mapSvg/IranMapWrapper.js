@@ -1,6 +1,7 @@
 import React from 'react';
 import { Tooltip } from 'react-tooltip';
 import { provinces } from '../../data/provinces';
+import './iran-map.css';
 var IranMapWrapper = function (_a) {
     var _b;
     var textColor = _a.textColor, mapRef = _a.mapRef, provinceName = _a.provinceName, pathClickedHandle = _a.pathClickedHandle, pathMouseOverHandler = _a.pathMouseOverHandler, data = _a.data, width = _a.width, tooltipTitle = _a.tooltipTitle;

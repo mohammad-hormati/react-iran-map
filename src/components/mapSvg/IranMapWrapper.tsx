@@ -2,6 +2,7 @@ import React from 'react'
 import { Tooltip } from 'react-tooltip'
 import { provinces } from '../../data/provinces'
 import { MapProps } from '../../interfaces'
+import './iran-map.css';
 
 const IranMapWrapper: React.FC<MapProps> = ({
   textColor,
