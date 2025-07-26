@@ -57,3 +57,11 @@
   font-family: inherit;
   font-weight: 700;
 }
+
+.selected-province {
+  stroke: #000000;
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  fill-opacity: 1;
+}

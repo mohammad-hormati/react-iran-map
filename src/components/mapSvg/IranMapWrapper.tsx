@@ -45,6 +45,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
         }}
       >
         <path
+          className={provinceName === 'خراسان رضوی' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='خراسان رضوی'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -66,6 +67,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   s-4.48,3.43-4.48,3.43s-3.16,1.85-5.8,2.9c-2.64,1.05-6.33,5.01-6.33,5.01L649.84,397.97z'
         />
         <path
+          className={provinceName === 'خراسان شمالی' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='خراسان شمالی'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -78,6 +80,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   c-1.32,1.58-8.18,2.11-8.18,2.11V189.88z'
         />
         <path
+          className={provinceName === 'گلستان' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='گلستان'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -89,6 +92,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   c0,0-1.05,6.59-0.79,7.38c0.26,0.79,3.16,13.71,3.16,13.71l1.58,6.07l-0.26,2.64l-5.01,1.85L523.77,275.86z'
         />
         <path
+          className={provinceName === 'گیلان' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='گیلان'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -99,6 +103,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   l11.08,5.01l6.07,1.85l2.11,11.34l7.38,8.18l6.07,3.43l-3.33,7.1l-5.9,9.38L347.59,285.62z'
         />
         <path
+          className={provinceName === 'مازندران' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='مازندران'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -110,6 +115,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   l-9.23,4.75c0,0-7.12,1.58-8.18,1.05c-1.05-0.53-13.45-2.37-13.45-2.37l-9.76-2.37l-24.79-6.33l-21.36-9.23l-4.75-4.48'
         />
         <path
+          className={provinceName === 'اردبیل'? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='اردبیل'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -122,6 +128,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   l-8.97-16.88l-3.96-13.71l5.01-11.08l0.53-10.55l-1.58-10.29L250.54,173.79z'
         />
         <path
+          className={provinceName === 'آذربایجان شرقی' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='آذربایجان شرقی'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -136,6 +143,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   l-1.58-5.27l2.11-3.43l3.96-2.64l-1.85-1.85l-2.11-9.76l0.79-11.6l-2.11-7.12l-7.44-9'
         />
         <path
+          className={provinceName === 'آذربایجان غربی' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='آذربایجان غربی'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -153,6 +161,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   l4.22,14.77l6.33,0.26l3.69,15.03L81.48,325.57z'
         />
         <path
+          className={provinceName === 'زنجان' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='زنجان'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -165,6 +174,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   l-15.76,8.18h-12.13l-11.34,7.38l-8.18,3.69l-7.12,7.91l-2.36,1.07L188.69,298.27z'
         />
         <polygon
+          className={provinceName === 'کردستان' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='کردستان'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -178,6 +188,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   137.26,297.48 130.54,296.69 123.81,291.55 115.9,297.88 115.9,307.77 99.29,307.77 99.29,313.31 96.52,315.29 94.14,325.57 '
         />
         <path
+          className={provinceName === 'کرمانشاه' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='کرمانشاه'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -193,6 +204,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   L99.09,465.81z'
         />
         <path
+          className={provinceName === 'ایلام' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='ایلام'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -207,6 +219,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   c0.99,2.57,1.38,3.96,3.16,7.32c1.78,3.36,2.18,3.56,3.96,7.71C199.18,568.67,204.32,571.64,204.32,571.64z'
         />
         <path
+          className={provinceName === 'همدان' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='همدان'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -219,6 +232,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   h13.65v-11.27l-12.23-15.06l-5.17-8.75l13.85-1.71l4.75-6.99l13.98,5.54l8.7,3.16l4.48-1.32L256.87,342.85z'
         />
         <polygon
+          className={provinceName === 'قزوین' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='قزوین'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -231,6 +245,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   256.87,331.77 256.87,342.85 260.89,339.42 270.38,347.07 275.13,353.66 278.3,355.84 287.99,355.84 291.55,357.62 '
         />
         <polygon
+          className={provinceName === 'البرز' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='البرز'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -240,6 +255,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   366.32,304.08 346.14,305.4 346.93,309.95 356.82,315.29 339.22,332.1 332.3,344.36 331.9,348.52 '
         />
         <polygon
+          className={provinceName === 'لرستان' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='لرستان'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -253,6 +269,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   162.98,467.99 161,472.34 169.11,483.02 196.41,498.85 204.32,507.15 210.45,509.13 '
         />
         <path
+          className={provinceName === 'خوزستان' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='خوزستان'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -267,6 +284,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   h-9.1l-17.8-4.15h-24.73l-5.14,8.31l1.98,8.31l-6.33,4.95l-1.58,14.04l-3.56,15.43l-6.73,4.95L204.32,571.64z'
         />
         <path
+          className={provinceName === 'کهگیلویه و بویراحمد' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='کهگیلویه و بویراحمد'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -279,6 +297,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   l1.05,3.69l5.8,5.27l1.85-2.11l5.8-1.05l0.53,8.18l7.38,1.32l5.27,7.12l0.53,3.96l-3.96,4.22l6.07,8.97V681.48z'
         />
         <path
+          className={provinceName === 'چهارمحال و بختیاری' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='چهارمحال و بختیاری'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -290,6 +309,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   l0.3,4l6.07,4.22l3.58-1.38l1.69-0.21H387.15z'
         />
         <path
+          className={provinceName === 'مرکزی' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='مرکزی'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -304,6 +324,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   l2.18,1.98h10.68l1.38,3.96l5.14,2.37l4.35-4.35h12.46l3.36,7.71l6.92,5.14l-1.19,7.71H321.81z'
         />
         <polygon
+          className={provinceName === 'قم' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='قم'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -314,6 +335,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   339.22,420.52 341.79,428.63 346.74,431.38 355.64,431.4 '
         />
         <path
+          className={provinceName === 'اصفهان' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='اصفهان'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -328,6 +350,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   l1.85,7.38v7.65l9.23,4.48l2.11,2.9l9.1,6.07l2.77,5.8v10.68l-1.58,1.71l-3.96,10.02l2.9,21.63v11.08l1.58,12.13L412.21,647.73z'
         />
         <path
+          className={provinceName === 'تهران' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='تهران'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -339,6 +362,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   l7.32-3.16h9.1l10.15,2.57l6.46,3.16l-2.97,17.41l13.85-1.19l19.38,4.15l3.76,4.55l6.53,2.77L424.08,393.81z'
         />
         <polygon
+          className={provinceName === 'سمنان' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='سمنان'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -355,6 +379,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   424.08,373.18 428.3,379.24 429.09,383.07 424.08,393.81 417.15,413.2 '
         />
         <path
+          className={provinceName === 'خراسان جنوبی' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='خراسان جنوبی'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -371,6 +396,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   l-8.44,1.85l-7.91,3.69l-5.27,3.96l-7.38,7.91l-6.59,3.69h-15.03l-17.08,25.32l-23.01,1.58v42.2L606.58,477.35z'
         />
         <path
+          className={provinceName === 'یزد' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='یزد'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -385,6 +411,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   l-23.21,1.25l-9.23,1.32l-13.45,9.76v40.62l2.64,6.59l7.12,3.96l-10.02,9.49L468.38,593.13z'
         />
         <path
+          className={provinceName === 'فارس' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='فارس'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -403,6 +430,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   l-8.7-5.27l1.32,6.86l3.22,9.66l0.18,1.46l-2.09,3.91l-11.34,9.23v11.6l-12.4,1.32L356.3,697.57z'
         />
         <path
+          className={provinceName === 'کرمان' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='کرمان'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -419,6 +447,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   L785.26,901.57z'
         />
         <path
+          className={provinceName === 'سیستان و بلوچستان' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='سیستان و بلوچستان'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -435,6 +464,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   v14.64l7.12,4.35v10.29l-2.37,2.77L785.26,901.57z'
         />
         <path
+          className={provinceName === 'بوشهر' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='بوشهر'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
@@ -451,6 +481,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
   l-2.64-5.87l-7.91-3.36v-9.89L345.48,682.8z'
         />
         <path
+          className={provinceName === 'هرمزگان' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='هرمزگان'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
