@@ -47,6 +47,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
         }}
       >
         <path
+          key={selectedProvince?.faName === 'خراسان رضوی' ? 'selected' : 'unselected'}
           className={selectedProvince?.faName === 'خراسان رضوی' ? 'selected-province' : '' }
           data-tooltip-id='iran-map-tooltip'
           data-name='خراسان رضوی'
