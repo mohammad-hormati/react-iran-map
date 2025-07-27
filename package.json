@@ -13,6 +13,7 @@
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "copy-css": "cp src/components/mapSvg/iran-map.css dist/esm/components/mapSvg/",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
     "test": "jest --config jestconfig.json",
@@ -53,5 +54,4 @@
     "react-tooltip": "^5.25.0",
     "ts-jest": "^29.1.1",
     "typescript": "^5.3.3"
-  }
-}
+  }}
