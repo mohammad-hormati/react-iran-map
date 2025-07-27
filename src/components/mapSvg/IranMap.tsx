@@ -100,6 +100,7 @@ const IranMap: React.FC<IranMapWrapperProps> = ({
         mapRef={mapRef}
         textColor={textColor}
         provinceName={provinceName}
+        selectedProvince={selectedProvince}
         pathClickedHandle={pathClickedHandle}
         pathMouseOverHandler={pathMouseOverHandler}
         data={data}

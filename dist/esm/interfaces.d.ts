@@ -24,6 +24,7 @@ export interface MapProps {
     textColor: string;
     mapRef: React.RefObject<any>;
     provinceName: null | string;
+    selectedProvince: selectedProvinceType;
     pathClickedHandle: Function;
     pathMouseOverHandler: Function;
     data: {};

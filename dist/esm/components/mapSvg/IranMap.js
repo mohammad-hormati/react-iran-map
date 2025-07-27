@@ -74,7 +74,7 @@ var IranMap = function (_a) {
         }
     }, [mapRef, selectedProvince]);
     return (React.createElement("div", { className: 'iran-map-wrapper', style: { width: width ? width : 500 } },
-        React.createElement(IranMapWrapper, { mapRef: mapRef, textColor: textColor, provinceName: provinceName, pathClickedHandle: pathClickedHandle, pathMouseOverHandler: pathMouseOverHandler, data: data, tooltipTitle: tooltipTitle, width: width })));
+        React.createElement(IranMapWrapper, { mapRef: mapRef, textColor: textColor, provinceName: provinceName, selectedProvince: selectedProvince, pathClickedHandle: pathClickedHandle, pathMouseOverHandler: pathMouseOverHandler, data: data, tooltipTitle: tooltipTitle, width: width })));
 };
 export default IranMap;
 //# sourceMappingURL=IranMap.js.map
