@@ -56,7 +56,7 @@ const IranMap: React.FC<IranMapWrapperProps> = ({
         ?.provinceName
 
       const selectedItem = provinces.find(
-        (province: provinceType) => province.provinceFaName === selectedProvince.faName,
+        (province: provinceType) => province.provinceFaName === selectedProvince?.faName,
       )?.provinceFaName
 
       if (title) {

@@ -42,7 +42,7 @@ var IranMap = function (_a) {
         var setColorHandler = function (element) {
             var _a, _b;
             var title = (_a = provinces_1.provinces.find(function (item) { return item.provinceFaName === element.getAttribute('data-name'); })) === null || _a === void 0 ? void 0 : _a.provinceName;
-            var selectedItem = (_b = provinces_1.provinces.find(function (province) { return province.provinceFaName === selectedProvince.faName; })) === null || _b === void 0 ? void 0 : _b.provinceFaName;
+            var selectedItem = (_b = provinces_1.provinces.find(function (province) { return province.provinceFaName === (selectedProvince === null || selectedProvince === void 0 ? void 0 : selectedProvince.faName); })) === null || _b === void 0 ? void 0 : _b.provinceFaName;
             if (title) {
                 var count = mapData[title.trim()];
                 if (count === 0) {

@@ -1,8 +1,9 @@
 /* eslint-disable @typescript-eslint/ban-types */
-export interface selectedProvinceType {
+export interface provincesType {
   name: string | undefined
   faName: string | undefined
 }
+export type selectedProvinceType = provincesType | null
 
 export interface provinceType {
   provinceName: string
