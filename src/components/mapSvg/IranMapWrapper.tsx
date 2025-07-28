@@ -47,7 +47,7 @@ const IranMapWrapper: React.FC<MapProps> = ({
         }}
       >
         <path
-          className={selectedProvince === null ? '' : selectedProvince.faName === 'خراسان رضوی' ? 'selected-province' : ''}
+          className={selectedProvince?.faName === 'خراسان رضوی' ? 'selected-province' : ''}
           data-tooltip-id='iran-map-tooltip'
           data-name='خراسان رضوی'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
